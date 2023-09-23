@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'roboto';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+}
+
+#game {
+    width: 90%;
+    height: 95%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#gameTop {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(5, 192, 192);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 12%;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: whitesmoke;
+}
+
+.elem .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 50%;
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+    color: blue;
+}
+
+#gameBottom {
+    width: 100%;
+    height: calc(100% - 100px);
+    background-color: aquamarine;
+    padding: 2%;
+}
+
+#gameBottom .bubbles {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameBottom .bubbles h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 190px;
+}
+
+#gameBottom .bubbles h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: blue;
+    margin-right: 30px;
+    gap: 10px;
+}
+
+#gameBottom .bubbles span {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+#gameBottom .bubbles button {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: aqua;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .5s ease-in-out;
+}
+
+#gameBottom .bubbles button:hover {
+    background-color: blue;
+}
+
+#gameBottom .bubbles .bubble {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: all .3s ease-in-out;
+}
+
+#gameBottom .bubbles .bubble:hover {
+    background-color: rgb(76, 76, 250);
+}
